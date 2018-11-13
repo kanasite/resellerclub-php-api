@@ -95,8 +95,8 @@ class ResellerClub
     /**
      * @return Billings
      */
-    public function billings()
+    public function billing()
     {
-        return $this->_getAPI('Billings');
+        return $this->_getAPI('Billing');
     }
 }
