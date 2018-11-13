@@ -4,11 +4,11 @@ namespace kanasite\ResellerClub\APIs;
 
 use kanasite\ResellerClub\Helper;
 
-class Billings
+class Billing
 {
     use Helper;
 
-    protected $api = 'billings';
+    protected $api = 'billing';
 
     public function getCustomerBalance($customerId)
     {
