@@ -5,18 +5,18 @@ Many thanks to [Ahmet Bora](https://github.com/afbora "Ahmet Bora"). This reposi
 "repositories": [
       {
           "type": "vcs",
-          "url":  "https://github.com/amirkhiz/resellerclub-php-api.git"
+          "url":  "https://github.com/kanasite/resellerclub-php-api.git"
       }
   ],
   "require": {
-    "habil/resellerclub-php-api": "dev-master"
+    "kanasite/resellerclub-php-api": "dev-master"
   }
   ```
 
 # Usage
 Note: All functions return raw response from ResellerClubs's API. (This will change in the future)
 ```
-$resellerClub = new \habil\ResellerClub\ResellerClub('<userId>', '<apiKey>', true, 60.0); // Last arguments are for testMode and timeout of the request in seconds.
+$resellerClub = new \kanasite\ResellerClub\ResellerClub('<userId>', '<apiKey>', true, 60.0); // Last arguments are for testMode and timeout of the request in seconds.
 
 // Get Available TLDs
 $resellerClub->domains()->getTLDs();

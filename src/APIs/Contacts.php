@@ -1,8 +1,8 @@
 <?php
 
-namespace habil\ResellerClub\APIs;
+namespace kanasite\ResellerClub\APIs;
 
-use habil\ResellerClub\Helper;
+use kanasite\ResellerClub\Helper;
 
 class Contacts
 {

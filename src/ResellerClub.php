@@ -1,12 +1,12 @@
 <?php
 
-namespace habil\ResellerClub;
+namespace kanasite\ResellerClub;
 
-use habil\ResellerClub\APIs\Contacts;
-use habil\ResellerClub\APIs\Customers;
-use habil\ResellerClub\APIs\Domains;
+use kanasite\ResellerClub\APIs\Contacts;
+use kanasite\ResellerClub\APIs\Customers;
+use kanasite\ResellerClub\APIs\Domains;
 use GuzzleHttp\Client as Guzzle;
-use habil\ResellerClub\APIs\Products;
+use kanasite\ResellerClub\APIs\Products;
 
 class ResellerClub
 {
@@ -53,7 +53,7 @@ class ResellerClub
     private function _getAPI($api)
     {
         if (empty($this->apiList[$api])) {
-            $class               = 'habil\\ResellerClub\\APIs\\' . $api;
+            $class               = 'kanasite\\ResellerClub\\APIs\\' . $api;
             $this->apiList[$api] = new $class($this->guzzle, $this->authentication);
         }
 
@@ -90,5 +90,13 @@ class ResellerClub
     public function products()
     {
         return $this->_getAPI('Products');
+    }
+
+    /**
+     * @return Billings
+     */
+    public function billings()
+    {
+        return $this->_getAPI('Billings');
     }
 }

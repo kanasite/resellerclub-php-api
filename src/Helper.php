@@ -1,6 +1,6 @@
 <?php
 
-namespace habil\ResellerClub;
+namespace kanasite\ResellerClub;
 
 use GuzzleHttp\Client as Guzzle;
 use GuzzleHttp\Exception\BadResponseException;

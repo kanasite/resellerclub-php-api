@@ -1,11 +1,11 @@
 {
-    "name": "habil/resellerclub-php-api",
+    "name": "kanasite/resellerclub-php-api",
     "description": "PHP SDK for ResellerClub API",
     "license": "MIT",
     "authors": [
         {
-            "name": "Siavash Habil",
-            "email": "amirkhiz@gmail.com"
+            "name": "Kyle Yee",
+            "email": "hello@kyleyee.com"
         }
     ],
     "require": {
@@ -13,7 +13,7 @@
     },
     "autoload": {
         "psr-4": {
-            "habil\\ResellerClub\\": "src/"
+            "kanasite\\ResellerClub\\": "src/"
         }
     },
     "config": {
